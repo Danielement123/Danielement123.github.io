@@ -11,8 +11,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onLoad="MM_preloadImages('images/classme.png')">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -20,30 +43,82 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Hello,world&nbsp;</h1>
-							<p class="major">欢迎来到Daniel的主页</p>
-							<p class="major">本人悲惨高中生一枚</p>
-							<p class="major">现就读于西交大苏州附中高一一班</p>
-<ul class="actions stacked">
-	    <li><a href="images/QQ.JPG" class="button big wide smooth-scroll-middle">QQ</a></li>
-							</ul>
+						  <h1>Hello,world</h1>
+							<p class="major">欢迎来到Daniel的小站</p>
+							<ul class="actions stacked">
+							  <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+						  </ul>
 						</div>
 						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+							<img src="images/cover.jpg" alt="" />
 						</div>
 					</section>
 
 				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+						  <h2>   </h2>
+							<p>本人悲惨高中生一枚</p>
+							<p>现就读于西交大苏州附中高一一班</p>
+							<ul class="actions stacked">
+								
+							</ul>
+						</div>
+						<div class="image">
+							<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/classme.png',1)"><img src="images/class.png" alt="" width="1620" height="1080" id="Image6"></a>
+						</div>
+					</section>
+
 				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>    </h2>
+							<p>爱好<br/>（-∞，学习）∪（学习，+∞）</p>
+							<ul class="actions stacked">
+								
+						  </ul>
+						</div>
+						<div class="image">
+							<img src="images/second.jpg" alt="" />
+						</div>
+					</section>
+
 				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>    </h2>
+							<p>最“喜欢"的软件<br/>Adobe Photoshop<br/>
+						  Adobe Premiere Pro<br/>Adobe Dreamweaver</p>
+							<ul class="actions stacked">
+								
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/DW.png" alt="" />
+						</div>
+					</section>
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>    </h2>
+							<p>联系</p>
+							<ul class="actions stacked">
+								<li><a href="images/QQ.JPG" class="button big wide smooth-scroll-middle">QQ</a></li>
+								<li><a href="mailto:3025434770@qq.com" class="button big wide smooth-scroll-middle">Email</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/bottom.jpg" alt="" />
+						</div>
+					</section>
 				<!-- Five -->
+					
+
 				<!-- Six -->
+					
+				<!-- Seven -->
 					
 
 				<!-- Footer -->
-					
-							
-							
 					
 
 			</div>
